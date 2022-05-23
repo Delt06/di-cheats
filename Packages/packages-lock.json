@@ -6,6 +6,13 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "com.deltation.di-framework": {
+      "version": "https://github.com/Delt06/di-framework.git?path=Packages/com.deltation.di-framework",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "19732614571089ab441f13a694ba70f1f538315d"
+    },
     "com.unity.collab-proxy": {
       "version": "1.11.2",
       "depth": 0,

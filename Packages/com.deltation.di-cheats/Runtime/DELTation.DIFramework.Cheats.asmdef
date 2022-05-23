@@ -1,1 +1,17 @@
-{"name":"DELTation.DIFramework.Cheats","rootNamespace":"DELTation.DIFramework.Cheats"}
+{
+    "name": "DELTation.DIFramework.Cheats",
+    "rootNamespace": "DELTation.DIFramework.Cheats",
+    "references": [
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:1b60fcce313931d4f9eefc7f1c079778"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
