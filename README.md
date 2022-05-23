@@ -1,11 +1,11 @@
-#  {package-display-name}
+#  DI Cheats
 
-[![Version](https://img.shields.io/github/v/release/Delt06/{repo-name}?sort=semver)](https://github.com/Delt06/{repo-name}/releases)
+[![Version](https://img.shields.io/github/v/release/Delt06/di-cheats?sort=semver)](https://github.com/Delt06/di-cheats/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-{package-description}
+A cheat system for DI Framework.
 
-> Developed and tested with Unity {unity-version}
+> Developed and tested with Unity 2020.3.16f1
 
 ## Table of contents
 
@@ -16,12 +16,12 @@
 ### Option 1
 - Open Package Manager through Window/Package Manager
 - Click "+" and choose "Add package from git URL..."
-- Insert the URL: https://github.com/Delt06/{repo-name}.git?path=Packages/com.deltation.{package-name}
+- Insert the URL: https://github.com/Delt06/di-cheats.git?path=Packages/com.deltation.di-cheats
 
 ### Option 2  
 Add the following line to `Packages/manifest.json`:
 ```
-"com.deltation.{package-name}": "https://github.com/Delt06/{repo-name}.git?path=Packages/com.deltation.{package-name}",
+"com.deltation.di-cheats": "https://github.com/Delt06/di-cheats.git?path=Packages/com.deltation.di-cheats",
 ```
 
 ## Usage

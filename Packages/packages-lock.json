@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "com.deltation.new-package": {
-      "version": "file:com.deltation.new-package",
+    "com.deltation.di-cheats": {
+      "version": "file:com.deltation.di-cheats",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
