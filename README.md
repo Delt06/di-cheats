@@ -31,7 +31,7 @@ Add the following line to `Packages/manifest.json`:
 
 ## Usage
 
-Create a cheat menu:
+- Create a cheat menu:
 ```csharp
 using DELTation.DIFramework.Cheats;
 using UnityEngine;
@@ -45,7 +45,7 @@ public class GameCheatMenu : CheatMenuBase
 }
 ```
 
-Create or modify existing dependency container:
+- Create or modify existing dependency container:
 ```csharp
 using DELTation.DIFramework;
 using DELTation.DIFramework.Cheats;
@@ -59,5 +59,9 @@ public class CompositionRoot : DependencyContainerBase
     }
 }
 ```
+- Ensure there is an `EventSystem` in your scene.
+- Tap the right top corner of the screen to open cheats.
+
+### Optional
 
 Define `DI_CHEATS_FORCE_IN_RELEASE` if you want to have cheats in a release build.
