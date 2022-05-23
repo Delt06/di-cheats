@@ -59,6 +59,8 @@ public class CompositionRoot : DependencyContainerBase
     }
 }
 ```
+
+- Ensure there is a `ContainerLifecycle` attached to your container.
 - Ensure there is an `EventSystem` in your scene.
 - Tap the right top corner of the screen to open cheats.
 
