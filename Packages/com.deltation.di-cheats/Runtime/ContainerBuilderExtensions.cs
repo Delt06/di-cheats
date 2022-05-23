@@ -21,7 +21,7 @@ namespace DELTation.DIFramework.Cheats
                         .GetComponentInChildren<CheatMenuRefs>(true);
                     return cheatMenuRefs.gameObject.AddComponent<TCheatMenu>();
                 }
-            ).AsInternal();
+            );
 #else
             return containerBuilder;
 #endif

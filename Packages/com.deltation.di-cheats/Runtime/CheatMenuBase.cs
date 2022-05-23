@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DELTation.DIFramework.Lifecycle;
 using UnityEngine;
 using UnityEngine.Events;
 using Object = UnityEngine.Object;
@@ -7,7 +8,7 @@ using Object = UnityEngine.Object;
 namespace DELTation.DIFramework.Cheats
 {
     [RequireComponent(typeof(CheatMenuRefs))]
-    public abstract class CheatMenuBase : MonoBehaviour
+    public abstract class CheatMenuBase : MonoBehaviour, IDestroyable
     {
         private readonly List<ICheatMenuItem> _items = new List<ICheatMenuItem>();
         private CheatMenuRefs _refs;
@@ -27,9 +28,10 @@ namespace DELTation.DIFramework.Cheats
             }
         }
 
-        protected void OnDestroy()
+        public void OnDestroy()
         {
-            _refs.CloseButton.onClick.RemoveListener(OnCloseButtonClick);
+            if (this != null)
+                Destroy(transform.root.gameObject);
         }
 
         protected static T GetService<T>() where T : class => Di.TryResolveGlobally(out T service)
