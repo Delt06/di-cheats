@@ -22,14 +22,13 @@ namespace DELTation.DIFramework.Cheats
 
         public void OnEnabled()
         {
-            _init();
+            _toggle.isOn = _init();
         }
 
         public void Init(string title, UnityAction<bool> onValueChanged, Func<bool> init)
         {
             _init = init;
             _onValueChanged = onValueChanged;
-            _toggle.isOn = true;
             _toggle.onValueChanged.AddListener(onValueChanged);
             _title.text = title;
         }
